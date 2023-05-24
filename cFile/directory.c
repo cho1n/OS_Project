@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../Header/main.h"
 
 TreeNode* IsExistDir(DirectoryTree* dirTree, char* dirName, char type)
 {

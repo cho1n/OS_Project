@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../Header/main.h"
 
 int find_(DirectoryTree* dirTree, char* cmd)
 {

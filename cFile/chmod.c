@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../Header/main.h"
 
 //chmod
 int ChangeMode(DirectoryTree* dirTree, int mode, char* dirName)

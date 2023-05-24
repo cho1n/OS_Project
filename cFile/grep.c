@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../Header/main.h"
 
 int grep(DirectoryTree* dirTree, char* cmd)        //완료
 {

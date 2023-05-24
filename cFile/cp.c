@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../Header/main.h"
 
 int mycp(DirectoryTree* dirTree,char* sName, char* oName){
 

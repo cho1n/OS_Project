@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../Header/main.h"
 
 void ls(DirectoryTree* dirTree){
     int count = 1;

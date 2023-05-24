@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../Header/main.h"
 
 //chown
 int ChangeOwner(DirectoryTree* dirTree, char* userName, char* dirName, int flag)

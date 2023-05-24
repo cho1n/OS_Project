@@ -163,7 +163,7 @@ int ChangeOwner(DirectoryTree* dirTree, char* userName, char* dirName, int flag)
 int chown_(DirectoryTree* dirTree, char* cmd);
 
 //find
-int ReadDir(DirectoryTree* dirTree, char* tmp, char* dirName,int o);
+int ReadDir(DirectoryTree* dirTree, char* tmp, char* dirName, int o);
 void FindDir(DirectoryTree* dirTree, char* dirName, int o);
 int find_(DirectoryTree* dirTree, char* cmd);
 

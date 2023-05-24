@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../Header/main.h"
 
 int cat(DirectoryTree* dirTree, char* cmd)
 {

@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../Header/main.h"
 
 void Instruction(DirectoryTree* dirTree, char* cmd)
 {

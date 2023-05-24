@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../Header/main.h"
 
 //catThread
 void *catThread(void *arg) {

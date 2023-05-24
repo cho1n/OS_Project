@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../Header/main.h"
 
 //user
 void WriteUser(UserList* userList, UserNode* userNode)

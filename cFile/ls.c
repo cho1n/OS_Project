@@ -8,7 +8,7 @@ void ls(DirectoryTree* dirTree){
     else{
         tmpNode=tmpNode->LeftChild;
         while(tmpNode->RightSibling!=NULL){
-            if(strlen(tmpNode->name)<8)
+            if(strlen(tmpNode->name)<10)
                 printf("%s\t\t",tmpNode->name);
             else
                 printf("%s\t",tmpNode->name);

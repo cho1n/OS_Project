@@ -31,7 +31,7 @@ void ls_a(DirectoryTree* dirTree){
         count = count + 2;
         tmpNode=tmpNode->LeftChild;
         while(tmpNode->RightSibling!=NULL){
-            if(strlen(tmpNode->name)<8)
+            if(strlen(tmpNode->name)<10)
                 printf("%s\t\t",tmpNode->name);
             else
                 printf("%s\t",tmpNode->name);

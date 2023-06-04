@@ -149,6 +149,8 @@ void ls(DirectoryTree* dirTree);
 void ls_a(DirectoryTree* dirTree);
 void ls_l(DirectoryTree* dirTree);
 void ls_al(DirectoryTree* dirTree);
+char *getUid(TreeNode *dirNode);
+char *getGid(TreeNode *dirNode);
 
 //cat
 int Concatenate(DirectoryTree* dirTree, char* fName, int type);

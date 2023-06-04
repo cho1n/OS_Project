@@ -222,7 +222,7 @@ void* grepThread(void* arg) {
             printf("grep: '%s': No such file or directory.\n", tmp2);
             return NULL;
         }
-        str = strtok(tmp, "/");
+        str = strtok(cmd, "/");
         while (str != NULL) {
             strncpy(tmp3, str, MAX_NAME);
             str = strtok(NULL, "/");
@@ -246,7 +246,7 @@ void* grepThread(void* arg) {
             dirTree->current = currentNode;
             return NULL;
         } 
-        else grepPrint(dirTree, userContent, cmd, option);
+        else grepPrint(dirTree, userContent, tmp3, option);
        
         dirTree->current = currentNode;
     }

@@ -79,7 +79,7 @@ typedef struct tagStack{
 //thread
 typedef struct threadTreeNode {
     DirectoryTree *threadTree;
-    DirectoryTree *fileName;
+    DirectoryTree *fName;
     char *cmd;
     char *usrName;
     char *content;

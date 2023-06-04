@@ -55,14 +55,14 @@ void ls_l(DirectoryTree* dirTree){
                 printf("%c",tmpNode->type);
                 PrintPermission(tmpNode);
                 printf(" %d %d %d",tmpNode->SIZE,tmpNode->UID,tmpNode->GID);
-                printf(" %d(month) %d(day) %d(hour) %d(min) ",tmpNode->month,tmpNode->day,tmpNode->hour,tmpNode->minute);
+                printf(" %d월 %d일 %d시 %d분 ",tmpNode->month,tmpNode->day,tmpNode->hour,tmpNode->minute);
                 printf("%s\n",tmpNode->name);
                 tmpNode=tmpNode->RightSibling;
         }
         printf("%c",tmpNode->type);
         PrintPermission(tmpNode);
         printf(" %d %d %d",tmpNode->SIZE,tmpNode->UID,tmpNode->GID);
-        printf(" %d(month) %d(day) %d(hour) %d(min) ",tmpNode->month,tmpNode->day,tmpNode->hour,tmpNode->minute);
+        printf(" %d월 %d일 %d시 %d분 ",tmpNode->month,tmpNode->day,tmpNode->hour,tmpNode->minute);
         printf("%s\n",tmpNode->name);
     }
 }
@@ -75,21 +75,21 @@ void ls_al(DirectoryTree* dirTree){
         printf("%c",dirTree->current->type);
         PrintPermission(dirTree->current);
         printf(" %d %d %d",dirTree->current->SIZE,dirTree->current->UID,dirTree->current->GID);
-        printf(" %d(month) %d(day) %d(hour) %d(min) ",dirTree->current->month,dirTree->current->day,dirTree->current->hour,dirTree->current->minute);
+        printf(" %d월 %d일 %d시 %d분 ",dirTree->current->month,dirTree->current->day,dirTree->current->hour,dirTree->current->minute);
         printf(".\n");
         //..
         if(strcmp(dirTree->current->name,"/")==0){
             printf("%c",dirTree->current->type);
             PrintPermission(dirTree->current);
             printf(" %d %d %d",dirTree->current->SIZE,dirTree->current->UID,dirTree->current->GID);
-            printf(" %d(month) %d(day) %d(hour) %d(min) ",dirTree->current->month,dirTree->current->day,dirTree->current->hour,dirTree->current->minute);
+            printf(" %d월 %d일 %d시 %d분 ",dirTree->current->month,dirTree->current->day,dirTree->current->hour,dirTree->current->minute);
             printf("..\n");
         }
         else{
             printf("%c",tmpNode->Parent->type);
             PrintPermission(tmpNode->Parent);
             printf(" %d %d %d",tmpNode->Parent->SIZE,tmpNode->Parent->UID,tmpNode->Parent->GID);
-            printf(" %d(month) %d(day) %d(hour) %d(min) ",tmpNode->Parent->month,tmpNode->Parent->day,tmpNode->Parent->hour,tmpNode->Parent->minute);
+            printf(" %d월 %d일 %d시 %d분 ",tmpNode->Parent->month,tmpNode->Parent->day,tmpNode->Parent->hour,tmpNode->Parent->minute);
             printf("..\n");
         }
     }
@@ -98,21 +98,21 @@ void ls_al(DirectoryTree* dirTree){
         printf("%c",dirTree->current->type);
         PrintPermission(dirTree->current);
         printf(" %d %d %d",dirTree->current->SIZE,dirTree->current->UID,dirTree->current->GID);
-        printf(" %d(month) %d(day) %d(hour) %d(min) ",dirTree->current->month,dirTree->current->day,dirTree->current->hour,dirTree->current->minute);
+        printf(" %d월 %d일 %d시 %d분 ",dirTree->current->month,dirTree->current->day,dirTree->current->hour,dirTree->current->minute);
         printf(".\n");
         //..
         if(strcmp(dirTree->current->name,"/")==0){
             printf("%c",dirTree->current->type);
             PrintPermission(dirTree->current);
             printf(" %d %d %d",dirTree->current->SIZE,dirTree->current->UID,dirTree->current->GID);
-            printf(" %d(month) %d(day) %d(hour) %d(min) ",dirTree->current->month,dirTree->current->day,dirTree->current->hour,dirTree->current->minute);
+            printf(" %d월 %d일 %d시 %d분 ",dirTree->current->month,dirTree->current->day,dirTree->current->hour,dirTree->current->minute);
             printf("..\n");
         }
         else{
             printf("%c",tmpNode->Parent->type);
             PrintPermission(tmpNode->Parent);
             printf(" %d %d %d",tmpNode->Parent->SIZE,tmpNode->Parent->UID,tmpNode->Parent->GID);
-            printf(" %d(month) %d(day) %d(hour) %d(min) ",tmpNode->Parent->month,tmpNode->Parent->day,tmpNode->Parent->hour,tmpNode->Parent->minute);
+            printf(" %d월 %d일 %d시 %d분 ",tmpNode->Parent->month,tmpNode->Parent->day,tmpNode->Parent->hour,tmpNode->Parent->minute);
             printf("..\n");
         }
 
@@ -122,14 +122,14 @@ void ls_al(DirectoryTree* dirTree){
                 printf("%c",tmpNode->type);
                 PrintPermission(tmpNode);
                 printf(" %d %d %d",tmpNode->SIZE,tmpNode->UID,tmpNode->GID);
-                printf(" %d(month) %d(day) %d(hour) %d(min) ",tmpNode->month,tmpNode->day,tmpNode->hour,tmpNode->minute);
+                printf(" %d월 %d일 %d시 %d분 ",tmpNode->month,tmpNode->day,tmpNode->hour,tmpNode->minute);
                 printf("%s\n",tmpNode->name);
                 tmpNode=tmpNode->RightSibling;
         }
         printf("%c",tmpNode->type);
         PrintPermission(tmpNode);
         printf(" %d %d %d",tmpNode->SIZE,tmpNode->UID,tmpNode->GID);
-        printf(" %d(month) %d(day) %d(hour) %d(min) ",tmpNode->month,tmpNode->day,tmpNode->hour,tmpNode->minute);
+        printf(" %d월 %d일 %d시 %d분 ",tmpNode->month,tmpNode->day,tmpNode->hour,tmpNode->minute);
         printf("%s\n",tmpNode->name);
     }
 }

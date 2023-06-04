@@ -77,7 +77,7 @@ typedef struct tagStack{
 }Stack;
 
 //thread
-typedef struct threadTree {
+typedef struct threadTreeNode {
     DirectoryTree *threadTree;
     DirectoryTree *fileName;
     char *cmd;
@@ -85,7 +85,7 @@ typedef struct threadTree {
     char *content;
     int mode;
     int option;
-} ThreadTree;
+} ThreadNode;
 
 time_t ltime;
 struct tm *today;

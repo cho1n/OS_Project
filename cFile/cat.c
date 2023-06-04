@@ -5,7 +5,7 @@ int cat(DirectoryTree* dirTree, char* cmd)
     TreeNode* currentNode = NULL;
     TreeNode* tmpNode = NULL;
     TreeNode* tmpNode2 = NULL;
-    ThreadTree threadTree[MAX_THREAD];
+    ThreadNode threadTree[MAX_THREAD];
     pthread_t threadPool[MAX_THREAD];
     int count = 0;
     char* str;

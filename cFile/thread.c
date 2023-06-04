@@ -2,7 +2,7 @@
 
 //catThread
 void *catThread(void *arg) {
-    ThreadTree *threadTree = (ThreadTree *)arg;
+    ThreadNode *threadTree = (ThreadNode *)arg;
     DirectoryTree *dirTree = threadTree->threadTree;
     DirectoryTree *tmpTree;
     char *cmd = threadTree->cmd;
@@ -124,7 +124,7 @@ void *catThread(void *arg) {
 
 //mkdirThread
 void *mkdirThread(void *arg) {
-    ThreadTree *threadTree = ((ThreadTree *)arg);
+    ThreadNode *threadTree = ((ThreadNode *)arg);
     DirectoryTree *dirTree = threadTree->threadTree;
     DirectoryTree *p_preTree;
     char *cmd = threadTree->cmd;
@@ -191,7 +191,7 @@ void *mkdirThread(void *arg) {
 
 //chownThread
 void *chownThread(void *arg) {
-    ThreadTree *threadTree = (ThreadTree *)arg;
+    ThreadNode *threadTree = (ThreadNode *)arg;
     DirectoryTree *dirTree = threadTree->threadTree;
     char *cmd = threadTree->cmd;
     char *tmp = threadTree->usrName;
@@ -214,7 +214,7 @@ void *chownThread(void *arg) {
 
 //chmodThread
 void *chmodThread(void *arg) {
-    ThreadTree *threadTree = (ThreadTree *) arg;
+    ThreadNode *threadTree = (ThreadNode *) arg;
     DirectoryTree *dirTree = threadTree->threadTree;
     int mode = threadTree->mode;
     char *cmd = threadTree->cmd;
@@ -225,7 +225,7 @@ void *chmodThread(void *arg) {
 
 //grepThread
 void *grepThread(void *arg){
-    ThreadTree *threadTree = (ThreadTree *)arg;
+    ThreadNode *threadTree = (ThreadNode *)arg;
     DirectoryTree *dirTree = threadTree->threadTree;
     char *cmd = threadTree->cmd;
     char *userContent = threadTree->content;

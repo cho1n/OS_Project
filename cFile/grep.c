@@ -6,7 +6,7 @@ int grep(DirectoryTree* dirTree, char* cmd)        //완료
     TreeNode* tmpNode = NULL;
     TreeNode* tmpNode2 = NULL;
     pthread_t threadPool[MAX_THREAD];
-    ThreadTree threadTree[MAX_THREAD];
+    ThreadNode threadTree[MAX_THREAD];
 
     int count = 0;
     char* str;

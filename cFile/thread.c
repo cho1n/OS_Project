@@ -94,7 +94,8 @@ void* mkdirThread(void* arg) {
 
     if (strstr(cmd, "/") == NULL) {
         MakeDir(dirTree, cmd, 'd');
-    } else if (option == 1) {
+    } 
+    else if (option == 1) {
         int length = strlen(tmp);
         int flag = 0;
         if (tmp[0] == '/') {
@@ -122,12 +123,14 @@ void* mkdirThread(void* arg) {
         directoryName[directoryLength] = '\0';
         MakeDir(dirTree, directoryName, 'd');
         dirTree->current = tmpNode;
-    } else {
+    } 
+    else {
         char* p_directory = getDir(cmd);
         directoryExist = MovePath(dirTree, p_directory);
         if (directoryExist != 0) {
             printf("mkdir: '%s': No such file or directory.\n", p_directory);
-        } else {
+        } 
+        else {
             char* str = strtok(tmp, "/");
             char* p_directory_name;
             while (str != NULL) {
@@ -182,7 +185,7 @@ void* grepThread(void* arg) {
     DirectoryTree* dirTree = threadTree->threadTree;
     char* cmd = threadTree->cmd;
     char* userContent = threadTree->content;
-    
+
     TreeNode* currentNode = dirTree->current;
     TreeNode* tmpNode = NULL;
     TreeNode* tmpNode2 = NULL;

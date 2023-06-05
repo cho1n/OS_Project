@@ -92,7 +92,7 @@ void Instruction(DirectoryTree* dirTree, char* cmd)
             grep(dirTree, str);
          }
     else{
-        printf("'%s': 명령을 찾을 수 없습니다\n", cmd);
+        printf("command not found : %s \n", cmd);
     }
     return;
 }

@@ -118,6 +118,7 @@ void ls_al(DirectoryTree* dirTree){
 
 
         tmpNode=tmpNode->LeftChild;
+        
         while(tmpNode->RightSibling!=NULL){
                 printf("%c",tmpNode->type);
                 PrintPermission(tmpNode);

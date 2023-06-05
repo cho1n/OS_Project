@@ -54,14 +54,14 @@ void ls_l(DirectoryTree* dirTree){
         while(tmpNode->RightSibling!=NULL){
                 printf("%c",tmpNode->type);
                 PrintPermission(tmpNode);
-                printf(" %d %s %s",tmpNode->SIZE,getUid(tmpNode),getGid(tmpNode));
+                printf(" %d %s %s",tmpNode->SIZE,get_UID(tmpNode),get_GID(tmpNode));
                 printf(" %d월 %d일 %d시 %d분 ",tmpNode->month,tmpNode->day,tmpNode->hour,tmpNode->minute);
                 printf("%s\n",tmpNode->name);
                 tmpNode=tmpNode->RightSibling;
         }
         printf("%c",tmpNode->type);
         PrintPermission(tmpNode);
-        printf(" %d %s %s",tmpNode->SIZE,getUid(tmpNode),getGid(tmpNode));
+        printf(" %d %s %s",tmpNode->SIZE,get_UID(tmpNode),get_GID(tmpNode));
         printf(" %d월 %d일 %d시 %d분 ",tmpNode->month,tmpNode->day,tmpNode->hour,tmpNode->minute);
         printf("%s\n",tmpNode->name);
     }
@@ -74,14 +74,14 @@ void ls_al(DirectoryTree* dirTree){
         //.
         printf("%c",dirTree->current->type);
         PrintPermission(dirTree->current);
-        printf(" %d %s %s",dirTree->current->SIZE,getUid(tmpNode),getGid(tmpNode));
+        printf(" %d %s %s",dirTree->current->SIZE,get_UID(tmpNode),get_GID(tmpNode));
         printf(" %d월 %d일 %d시 %d분 ",dirTree->current->month,dirTree->current->day,dirTree->current->hour,dirTree->current->minute);
         printf(".\n");
         //..
         if(strcmp(dirTree->current->name,"/")==0){
             printf("%c",dirTree->current->type);
             PrintPermission(dirTree->current);
-            printf(" %d %s %s",dirTree->current->SIZE,getUid(tmpNode),getGid(tmpNode));
+            printf(" %d %s %s",dirTree->current->SIZE,get_UID(tmpNode),get_GID(tmpNode));
             printf(" %d월 %d일 %d시 %d분 ",dirTree->current->month,dirTree->current->day,dirTree->current->hour,dirTree->current->minute);
             printf("..\n");
         }
@@ -97,14 +97,14 @@ void ls_al(DirectoryTree* dirTree){
         //.
         printf("%c",dirTree->current->type);
         PrintPermission(dirTree->current);
-        printf(" %d %s %s",dirTree->current->SIZE,getUid(tmpNode),getGid(tmpNode));
+        printf(" %d %s %s",dirTree->current->SIZE,get_UID(tmpNode),get_GID(tmpNode));
         printf(" %d월 %d일 %d시 %d분 ",dirTree->current->month,dirTree->current->day,dirTree->current->hour,dirTree->current->minute);
         printf(".\n");
         //..
         if(strcmp(dirTree->current->name,"/")==0){
             printf("%c",dirTree->current->type);
             PrintPermission(dirTree->current);
-            printf(" %d %s %s",dirTree->current->SIZE,getUid(tmpNode),getGid(tmpNode));
+            printf(" %d %s %s",dirTree->current->SIZE,get_UID(tmpNode),get_GID(tmpNode));
             printf(" %d월 %d일 %d시 %d분 ",dirTree->current->month,dirTree->current->day,dirTree->current->hour,dirTree->current->minute);
             printf("..\n");
         }
@@ -121,20 +121,20 @@ void ls_al(DirectoryTree* dirTree){
         while(tmpNode->RightSibling!=NULL){
                 printf("%c",tmpNode->type);
                 PrintPermission(tmpNode);
-                printf(" %d %s %s",tmpNode->SIZE,getUid(tmpNode),getGid(tmpNode));
+                printf(" %d %s %s",tmpNode->SIZE,get_UID(tmpNode),get_GID(tmpNode));
                 printf(" %d월 %d일 %d시 %d분 ",tmpNode->month,tmpNode->day,tmpNode->hour,tmpNode->minute);
                 printf("%s\n",tmpNode->name);
                 tmpNode=tmpNode->RightSibling;
         }
         printf("%c",tmpNode->type);
         PrintPermission(tmpNode);
-        printf(" %d %s %s",tmpNode->SIZE,getUid(tmpNode),getGid(tmpNode));
+        printf(" %d %s %s",tmpNode->SIZE,get_UID(tmpNode),get_GID(tmpNode));
         printf(" %d월 %d일 %d시 %d분 ",tmpNode->month,tmpNode->day,tmpNode->hour,tmpNode->minute);
         printf("%s\n",tmpNode->name);
     }
 }
 
-char *getUid(TreeNode *dirNode) {
+char *get_UID(TreeNode *dirNode) {
     UserNode *tmpNode = NULL;
 
     tmpNode = usrList->head;
@@ -145,7 +145,7 @@ char *getUid(TreeNode *dirNode) {
     return tmpNode->name;
 }
 
-char *getGid(TreeNode *dirNode) {
+char *get_GID(TreeNode *dirNode) {
     UserNode *tmpNode = NULL;
 
     tmpNode = usrList->head;

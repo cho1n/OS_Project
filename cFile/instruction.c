@@ -16,6 +16,7 @@ void Instruction(DirectoryTree* dirTree, char* cmd)
         return;
     }
     str = strtok(cmd, " ");
+    
 //cmd를 띄어쓰기 기준으로 나눠줌
     if(strcmp(str, "mkdir") == 0){
         str = strtok(NULL, " ");

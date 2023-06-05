@@ -16,7 +16,7 @@ OBJS = $(addprefix $(OBJ_DIR)/, $(CFILES:.c=.o))
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) -o $(NAME) $(OBJS) -o $@ -I$(HEADER) -lpthread
+	$(CC) -o -w $(NAME) $(OBJS) -o $@ -I$(HEADER) -lpthread
 
 $(OBJ_DIR)/%.o: $(C_DIR)/%.c | $(OBJ_DIR)
 	@mkdir -p $(OBJ_DIR)
